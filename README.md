@@ -19,6 +19,21 @@ See `source_dataset/Curated_AR_TOX21_Dataset.smi`
 
 Train a binary classifier using PyTorch that will label a molecule "Active" or "Inactive" based on its functional groups.
 
-### Piecemeal Objectives
-1. Extract features from the SMILES fingerprints of the molecules
-2. ... TBD
+## Approach
+Develop features for molecules based on their SMILES fingerprints. 
+Test different sets of descriptors for predictive power.
+
+Sets and their respective motivating hypotheses:
+1. Set1: Molecule activity is determined by Lipinski's rules of 5.
+
+#### Ideas for further testing
+
+What's important for binding? (from chemical intuition)
+ - hydrophobicity
+ - hydrogen bonding ability
+ - charge
+ - radius of gyration
+ - felxibility
+ - rings
+ - saturation of bonds
+
