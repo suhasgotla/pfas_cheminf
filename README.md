@@ -24,7 +24,7 @@ Develop features for molecules based on their SMILES fingerprints.
 Test different sets of descriptors for predictive power.
 
 Sets and their respective motivating hypotheses:
-1. Set1: Molecule activity is determined by Lipinski's rules of 5.
+* `h1_lipinski/`: Molecule activity is determined by Lipinski's rules of 5.
 
 #### Ideas for further testing
 
