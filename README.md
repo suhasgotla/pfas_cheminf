@@ -19,12 +19,17 @@ See `source_dataset/Curated_AR_TOX21_Dataset.smi`
 
 Train a binary classifier using PyTorch that will label a molecule "Active" or "Inactive" based on its functional groups.
 
-## Approach
+## General Approach
 Develop features for molecules based on their SMILES fingerprints. 
 Test different sets of descriptors for predictive power.
 
-Sets and their respective motivating hypotheses:
-* `h1_lipinski/`: Molecule activity is determined by Lipinski's rules of 5.
+## H1: Molecule activity is determined by Lipinski's rules of 5.
+See `h1_lipinski/`.
+A simple perceptron model with four features was built. 
+The accuracy converged at 88.3%, anf the loss function converged around 60-70 epochs.
+
+![Loss reduction for the h1_lipinski_perceptron model.](./h1_lipinksi/loss_reduction.png)
+
 
 #### Ideas for further testing
 
